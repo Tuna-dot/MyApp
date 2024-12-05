@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient_red"
+    tools:context=".MainActivity2Activity">
+
+    <ImageButton
+        android:id="@+id/button_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/icons9__64"
+        android:padding="1dp"
+        android:background="@drawable/roundcorner"
+        />
+
+    <Button
+        android:id="@+id/button_next"
+        android:backgroundTint="@color/blue"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:text="NEXT"
+        android:textSize="30sp"
+        android:textColor="@color/gradient"
+        android:textStyle="bold"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/icons8__64"
+        app:layout_constraintBottom_toBottomOf="@+id/button_next"
+        app:layout_constraintEnd_toEndOf="@+id/button_next"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@+id/button_next"
+        app:layout_constraintTop_toTopOf="@+id/button_next"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold|normal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/edittext_username"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Username"
+        android:textSize="25sp"
+        android:backgroundTint="@color/red_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edittext_email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Email"
+        android:textSize="25sp"
+        android:backgroundTint="@color/red_text"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_username"
+        app:layout_constraintStart_toStartOf="@+id/edittext_username"
+        app:layout_constraintEnd_toEndOf="@+id/edittext_username"
+        />
+
+    <EditText
+        android:id="@+id/edittext_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/red_text"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_email"
+        app:layout_constraintStart_toStartOf="@+id/edittext_email"
+        app:layout_constraintEnd_toEndOf="@+id/edittext_email"
+        />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_samurai_icons"
+        app:layout_constraintBottom_toTopOf="@+id/text_samurai"
+        app:layout_constraintStart_toStartOf="@+id/text_samurai"
+        app:layout_constraintEnd_toEndOf="@+id/text_samurai"
+
+        />
+
+    <TextView
+        android:id="@+id/text_samurai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Samurai"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/black"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+    />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
